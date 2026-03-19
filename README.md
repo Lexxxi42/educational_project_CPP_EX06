@@ -1,2 +1,45 @@
-# educational_project
-The repository contains a training project on processing arrays and strings. ET-113, Institute of Natural and Exact Sciences, SUSU. (by S.A.M.)
+# Educational Project CPP EX06
+**ET-113, Институт естественных и точных наук, ЮУрГУ**  
+*Автор: Степаненко А.М.*
+
+**Компиляция:** `make run`
+
+## Задание 1: Нормирование
+> **На заданном отрезке, с заданным шагом изменения аргумента вычислить и
+поместить в массив F 30 значений функции e-x
+sin(6x), делённые на её
+последнее положительное значение.**
+### Тесты
+| Диапазон     | Шаг  | Скриншот |
+|--------------|------|----------|
+| [0, 29]      | 1.0  | ![test1](img/screenshot_4.png) |
+| [0, 2.9]     | 0.1  | ![test2](img/screenshot_7.png) |
+| [-1, 1.9]    | 0.1  | ![test3](img/screenshot_8.png) |
+| [0, 14.5]    | 0.5  | ![test4](img/screenshot_9.png) |
+| [0, 0.29]    | 0.01 | ![test5](img/screenshot_10.png) |
+| [0.01,0.02]  | 0.0001|![test6](img/screenshot_11.png)|
+
+### Исключения
+| Ситуация | Скриншот |
+|----------|----------|
+| Буквы/равные значения | ![exc1](img/screenshot_1.png) |
+| Нулевой шаг | ![exc2](img/screenshot_2.png) |
+| Отрицательный шаг | ![exc3](img/screenshot_3.png) |
+| Нет положительных | ![exc4](img/screenshot_6.png) |
+| менее 30 точек | ![exc5](img/screenshot_5.png) |
+
+## Задание 2: Парсинг ФИО героев ВОВ
+> **Дан текста, в котором с помощью тегов `<strong>` … `</strong>` выделены ФИО
+героев ВОВ. Напишите программу, которая выводит только ФИО героев.
+Учесть, что разметка может быть нарушена, то есть может отсутствовать
+открывающийся тег `<strong>` или закрывающийся тег `</strong>`. Считать такие
+строки не выделенными**
+### Тесты
+![test1](img/screenshot_test.png)
+![test2](img/screenshot_test2.png)
+### Исключения
+| Ситуация | Скриншот |
+|----------|----------|
+| Битые теги | ![invalid](img/screenshot_invalid.png) |
+| Пустая строка | ![empty](img/screenshot_empty.png) |
+
